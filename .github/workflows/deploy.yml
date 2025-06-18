@@ -26,5 +26,5 @@ jobs:
             cd ~/GitHub-CI-CD-Learning || git clone https://github.com/${{ github.repository }}.git ~/GitHub-CI-CD-Learning && cd ~/GitHub-CI-CD-Learning
             git pull origin main
             npm install
-            pm2 restart index.js || pm2 start index.js --name GitHub-CI-CD-Learning
+            pm2 restart server.js || pm2 start server.js --name GitHub-CI-CD-Learning
           EOF
